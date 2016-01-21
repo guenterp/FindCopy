@@ -1,0 +1,30 @@
+2016-01-20 23:02:55,827 [      doIt:   42] INFO - application started successfully
+2016-01-20 23:02:55,944 [preVisitDirectory:   81] DEBUG - preVisitDirectory: testdir/sourceDir
+2016-01-20 23:02:55,977 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/test2.txt
+2016-01-20 23:02:55,998 [preVisitDirectory:   81] DEBUG - preVisitDirectory: testdir/sourceDir/dir0
+2016-01-20 23:02:55,999 [postVisitDirectory:  115] DEBUG - set last modified time for testdir/destDir/dir0 to testdir/destDir/dir0
+2016-01-20 23:02:56,000 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/test3.txt.bak
+2016-01-20 23:02:56,000 [      find:   51] DEBUG - found file testdir/sourceDir/test3.txt.bak
+2016-01-20 23:02:56,001 [ visitFile:   70] DEBUG - visiting file: testdir/destDir/test3.txt.bak
+2016-01-20 23:02:56,002 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/test2.txt.bak
+2016-01-20 23:02:56,002 [      find:   51] DEBUG - found file testdir/sourceDir/test2.txt.bak
+2016-01-20 23:02:56,003 [ visitFile:   70] DEBUG - visiting file: testdir/destDir/test2.txt.bak
+2016-01-20 23:02:56,003 [preVisitDirectory:   81] DEBUG - preVisitDirectory: testdir/sourceDir/dir2
+2016-01-20 23:02:56,004 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/dir2/test3.txt.bak
+2016-01-20 23:02:56,004 [      find:   51] DEBUG - found file testdir/sourceDir/dir2/test3.txt.bak
+2016-01-20 23:02:56,005 [ visitFile:   70] DEBUG - visiting file: testdir/destDir/dir2/test3.txt.bak
+2016-01-20 23:02:56,005 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/dir2/test3.txt
+2016-01-20 23:02:56,009 [postVisitDirectory:  115] DEBUG - set last modified time for testdir/destDir/dir2 to testdir/destDir/dir2
+2016-01-20 23:02:56,009 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/test3.txt
+2016-01-20 23:02:56,010 [preVisitDirectory:   81] DEBUG - preVisitDirectory: testdir/sourceDir/dir1
+2016-01-20 23:02:56,011 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/dir1/test.txt
+2016-01-20 23:02:56,011 [postVisitDirectory:  115] DEBUG - set last modified time for testdir/destDir/dir1 to testdir/destDir/dir1
+2016-01-20 23:02:56,012 [ visitFile:   65] DEBUG - visitFile: testdir/sourceDir/test1.txt
+2016-01-20 23:02:56,012 [postVisitDirectory:  115] DEBUG - set last modified time for testdir/destDir to testdir/destDir
+2016-01-20 23:02:56,013 [      doIt:   59] INFO - walked through source tree: testdir/sourceDir and copied 3 files with pattern *.bak
+2016-01-20 23:02:56,015 [postVisitDirectory:   28] DEBUG - cleanup: deleting empty directory testdir/destDir/dir0
+2016-01-20 23:02:56,016 [postVisitDirectory:   28] DEBUG - cleanup: deleting empty directory testdir/destDir/dir2
+2016-01-20 23:02:56,017 [postVisitDirectory:   28] DEBUG - cleanup: deleting empty directory testdir/destDir/dir1
+2016-01-20 23:02:56,017 [postVisitDirectory:   28] DEBUG - cleanup: deleting empty directory testdir/destDir
+2016-01-20 23:02:56,018 [      doIt:   65] INFO - walked through destination tree testdir/destDir and and removed 2 empty directories
+2016-01-20 23:02:56,019 [      doIt:   67] INFO - application terminated successfully

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+        
+  <appender name="appender" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="File" value="logdir/findcopy.txt"/>
+    <param name="DatePattern" value="'.'yyyy-MM-dd"/> 
+    <param name="Append" value="true"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%10M:%5L] %p - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d     [%10M:%5L]  %6p  -  %m%n"/>
+    </layout>
+  </appender>
+
+  <root>
+  	<!-- log levels -->
+  	<!--
+  		debug
+    	        info
+		warn
+		error
+		fatal
+  	 -->
+    <priority value ="debug"/>
+    <appender-ref ref="appender"/>
+    <appender-ref ref="ConsoleAppender"/>
+  </root>
+
+</log4j:configuration>
